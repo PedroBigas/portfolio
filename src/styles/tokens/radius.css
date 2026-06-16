@@ -1,0 +1,15 @@
+/* ============================================================
+   RADIUS — Pedro Bigas Design System
+   Subtle to pronounced. --radius-md is the component default.
+   ============================================================ */
+
+:root {
+  --radius-none: 0;
+  --radius-xs:   4px;
+  --radius-sm:   6px;
+  --radius-md:   10px;   /* buttons, inputs, tags */
+  --radius-lg:   14px;   /* cards */
+  --radius-xl:   20px;   /* hero panels, modals */
+  --radius-2xl:  28px;   /* feature surfaces */
+  --radius-full: 999px;  /* pills, avatars */
+}

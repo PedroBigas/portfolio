@@ -1,0 +1,13 @@
+/* ============================================================
+   Pedro Bigas — Design System
+   Global entry point. Import order: tokens -> base.
+   Fonts are self-hosted via next/font/google in app/layout.tsx.
+   ============================================================ */
+
+@import '../styles/tokens/colors.css';
+@import '../styles/tokens/typography.css';
+@import '../styles/tokens/spacing.css';
+@import '../styles/tokens/radius.css';
+@import '../styles/tokens/shadows.css';
+@import '../styles/tokens/animation.css';
+@import '../styles/tokens/base.css';

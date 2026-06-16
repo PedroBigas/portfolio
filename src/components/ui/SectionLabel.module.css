@@ -1,0 +1,17 @@
+.label { display: inline-flex; align-items: center; gap: var(--space-3); }
+.num {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--primary);
+  letter-spacing: var(--tracking-wide);
+}
+.line { width: 28px; height: 1px; background: linear-gradient(90deg, var(--primary), transparent); }
+.text {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  color: var(--text-secondary);
+}

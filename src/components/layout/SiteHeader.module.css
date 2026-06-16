@@ -1,0 +1,2 @@
+.navWrap { position: sticky; top: 0; z-index: 50; padding: var(--space-4) var(--gutter) 0; }
+.inner { width: 100%; max-width: var(--container-xl); margin: 0 auto; }

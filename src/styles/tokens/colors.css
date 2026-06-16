@@ -1,0 +1,113 @@
+/* ============================================================
+   COLORS — Pedro Bigas Design System
+   Purple-forward. Dark mode is the DEFAULT (:root); light mode
+   is applied via [data-theme="light"]. All text/surface pairings
+   target WCAG AA (>=4.5 body, >=3 large/UI).
+   ============================================================ */
+
+:root {
+  /* ---- Brand purple scale (raw ramp) ---- */
+  --purple-50:  #F4EDFF;
+  --purple-100: #E9DBFF;
+  --purple-200: #D3B7FF;
+  --purple-300: #B98DFF;
+  --purple-400: #9F66F7;
+  --purple-500: #8B5CF6;   /* core accent */
+  --purple-600: #7C3AED;
+  --purple-700: #6D28D9;
+  --purple-800: #4C1D95;
+  --purple-900: #2E1065;
+  --purple-950: #1A0A3D;
+
+  /* ---- Violet-ink neutrals (purple-tinted greys) ---- */
+  --ink-950: #0A0712;   /* deepest background */
+  --ink-900: #100B1C;
+  --ink-850: #151021;
+  --ink-800: #1B1430;
+  --ink-700: #241A3E;
+  --ink-600: #2E2350;
+  --ink-500: #3B2E63;
+  --ink-400: #564B78;
+  --ink-300: #7E768F;
+  --ink-200: #B8B0C9;
+  --ink-100: #DED9EA;
+  --ink-50:  #F5F3FA;
+
+  /* ===========================================================
+     SEMANTIC TOKENS — DARK (default)
+     =========================================================== */
+  --primary:          var(--purple-500);
+  --primary-hover:    var(--purple-400);
+  --primary-active:   var(--purple-600);
+  --primary-muted:    rgba(139, 92, 246, 0.14);  /* tints, badge bg */
+  --primary-contrast: #FFFFFF;                    /* text on primary */
+
+  --background:       var(--ink-950);
+  --surface:          var(--ink-850);
+  --surface-elevated: var(--ink-800);
+  --surface-sunken:   var(--ink-900);
+
+  --border:           #2A2140;
+  --border-strong:    #3A2F55;
+  --border-focus:     var(--purple-400);
+
+  --text-primary:     var(--ink-50);
+  --text-secondary:   var(--ink-200);
+  --text-muted:       var(--ink-300);
+  --text-on-primary:  #FFFFFF;
+  --text-link:        var(--purple-300);
+
+  /* ---- Semantic status ---- */
+  --success:        #34D399;
+  --success-muted:  rgba(52, 211, 153, 0.14);
+  --warning:        #FBBF24;
+  --warning-muted:  rgba(251, 191, 36, 0.14);
+  --error:          #F87171;
+  --error-muted:    rgba(248, 113, 113, 0.14);
+  --info:           var(--purple-300);
+  --info-muted:     var(--primary-muted);
+
+  /* ---- Signature gradient & glow ---- */
+  --gradient-brand: linear-gradient(135deg, #9F66F7 0%, #7C3AED 100%);
+  --gradient-sheen: linear-gradient(135deg, rgba(159,102,247,0.18) 0%, rgba(124,58,237,0.04) 100%);
+  --glow-primary:   0 0 0 1px rgba(139,92,246,0.4), 0 0 24px rgba(139,92,246,0.35);
+}
+
+/* ===========================================================
+   SEMANTIC TOKENS — LIGHT
+   =========================================================== */
+[data-theme="light"] {
+  --primary:          var(--purple-600);
+  --primary-hover:    var(--purple-700);
+  --primary-active:   var(--purple-800);
+  --primary-muted:    rgba(124, 58, 237, 0.10);
+  --primary-contrast: #FFFFFF;
+
+  --background:       #FAFAFC;
+  --surface:          #FFFFFF;
+  --surface-elevated: #FFFFFF;
+  --surface-sunken:   #F3F1F8;
+
+  --border:           #E8E5EF;
+  --border-strong:    #D6D1E4;
+  --border-focus:     var(--purple-600);
+
+  --text-primary:     #18121F;
+  --text-secondary:   #5A5368;
+  --text-muted:       #857E94;
+  --text-on-primary:  #FFFFFF;
+  --text-link:        var(--purple-700);
+
+  --success:        #059669;
+  --success-muted:  rgba(5, 150, 105, 0.10);
+  --warning:        #B45309;
+  --warning-muted:  rgba(180, 83, 9, 0.10);
+  --error:          #DC2626;
+  --error-muted:    rgba(220, 38, 38, 0.10);
+  --info:           var(--purple-600);
+  --info-muted:     var(--primary-muted);
+
+  --gradient-brand: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+  --gradient-sheen: linear-gradient(135deg, rgba(124,58,237,0.07) 0%, rgba(124,58,237,0.01) 100%);
+  --glow-primary:   0 0 0 1px rgba(124,58,237,0.25), 0 0 20px rgba(124,58,237,0.18);
+}

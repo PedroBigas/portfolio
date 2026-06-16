@@ -1,0 +1,10 @@
+.mark {
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--glow-sm);
+}
+
+.sm { width: 28px; height: 28px; }
+.md { width: 40px; height: 40px; border-radius: var(--radius-md); }
